@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+:root {
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: #F5F3EE;
+  color: #0D1117;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.shimmer-line {
+  background: linear-gradient(90deg, #e8e4de 25%, #f5f3ee 50%, #e8e4de 75%);
+  background-size: 400px 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+  border-radius: 6px;
+}
